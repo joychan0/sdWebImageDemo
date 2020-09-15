@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24924B9CE47247E85C00F2A7 /* libPods-sdWebImageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32EBBFBBEC7ABC85BAAC4C90 /* libPods-sdWebImageDemo.a */; };
 		CF765C612510B471001E39F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF765C602510B471001E39F7 /* AppDelegate.m */; };
 		CF765C642510B471001E39F7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF765C632510B471001E39F7 /* SceneDelegate.m */; };
 		CF765C672510B471001E39F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF765C662510B471001E39F7 /* ViewController.m */; };
@@ -14,9 +15,12 @@
 		CF765C6C2510B474001E39F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF765C6B2510B474001E39F7 /* Assets.xcassets */; };
 		CF765C6F2510B474001E39F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF765C6D2510B474001E39F7 /* LaunchScreen.storyboard */; };
 		CF765C722510B474001E39F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF765C712510B474001E39F7 /* main.m */; };
+		CF765C7B2510C169001E39F7 /* JViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF765C7A2510C169001E39F7 /* JViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32EBBFBBEC7ABC85BAAC4C90 /* libPods-sdWebImageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sdWebImageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7679AE7DB0BC396395E3260A /* Pods-sdWebImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdWebImageDemo.debug.xcconfig"; path = "Target Support Files/Pods-sdWebImageDemo/Pods-sdWebImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF765C5C2510B471001E39F7 /* sdWebImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sdWebImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF765C5F2510B471001E39F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF765C602510B471001E39F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +33,9 @@
 		CF765C6E2510B474001E39F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF765C702510B474001E39F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF765C712510B474001E39F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF765C792510C169001E39F7 /* JViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JViewController.h; sourceTree = "<group>"; };
+		CF765C7A2510C169001E39F7 /* JViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JViewController.m; sourceTree = "<group>"; };
+		D964E1D175F6E5F10DCFFB88 /* Pods-sdWebImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdWebImageDemo.release.xcconfig"; path = "Target Support Files/Pods-sdWebImageDemo/Pods-sdWebImageDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24924B9CE47247E85C00F2A7 /* libPods-sdWebImageDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B55232677D9C1F2AD3FAF63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32EBBFBBEC7ABC85BAAC4C90 /* libPods-sdWebImageDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ED613298F35526095170224 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7679AE7DB0BC396395E3260A /* Pods-sdWebImageDemo.debug.xcconfig */,
+				D964E1D175F6E5F10DCFFB88 /* Pods-sdWebImageDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF765C532510B471001E39F7 = {
 			isa = PBXGroup;
 			children = (
 				CF765C5E2510B471001E39F7 /* sdWebImageDemo */,
 				CF765C5D2510B471001E39F7 /* Products */,
+				7ED613298F35526095170224 /* Pods */,
+				3B55232677D9C1F2AD3FAF63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +88,7 @@
 		CF765C5E2510B471001E39F7 /* sdWebImageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CF765C782510C11B001E39F7 /* BaseComponent */,
 				CF765C5F2510B471001E39F7 /* AppDelegate.h */,
 				CF765C602510B471001E39F7 /* AppDelegate.m */,
 				CF765C622510B471001E39F7 /* SceneDelegate.h */,
@@ -76,6 +104,15 @@
 			path = sdWebImageDemo;
 			sourceTree = "<group>";
 		};
+		CF765C782510C11B001E39F7 /* BaseComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CF765C792510C169001E39F7 /* JViewController.h */,
+				CF765C7A2510C169001E39F7 /* JViewController.m */,
+			);
+			path = BaseComponent;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF765C752510B474001E39F7 /* Build configuration list for PBXNativeTarget "sdWebImageDemo" */;
 			buildPhases = (
+				107165A9463C641CC53D67DA /* [CP] Check Pods Manifest.lock */,
 				CF765C582510B471001E39F7 /* Sources */,
 				CF765C592510B471001E39F7 /* Frameworks */,
 				CF765C5A2510B471001E39F7 /* Resources */,
+				774EC8679D4C405B52BA391D /* [CP] Copy Pods Resources */,
+				C03D9B0F8C8569D656E7D9F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +181,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		107165A9463C641CC53D67DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sdWebImageDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		774EC8679D4C405B52BA391D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sdWebImageDemo/Pods-sdWebImageDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sdWebImageDemo/Pods-sdWebImageDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sdWebImageDemo/Pods-sdWebImageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C03D9B0F8C8569D656E7D9F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sdWebImageDemo/Pods-sdWebImageDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sdWebImageDemo/Pods-sdWebImageDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sdWebImageDemo/Pods-sdWebImageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF765C582510B471001E39F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +248,7 @@
 				CF765C672510B471001E39F7 /* ViewController.m in Sources */,
 				CF765C612510B471001E39F7 /* AppDelegate.m in Sources */,
 				CF765C722510B474001E39F7 /* main.m in Sources */,
+				CF765C7B2510C169001E39F7 /* JViewController.m in Sources */,
 				CF765C642510B471001E39F7 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +387,7 @@
 		};
 		CF765C762510B474001E39F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7679AE7DB0BC396395E3260A /* Pods-sdWebImageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +404,7 @@
 		};
 		CF765C772510B474001E39F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D964E1D175F6E5F10DCFFB88 /* Pods-sdWebImageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
